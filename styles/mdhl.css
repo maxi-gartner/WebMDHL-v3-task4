@@ -3,16 +3,13 @@ body{
     min-width: 700px;
     height: 100%;
     color: white;
-    
 }
-
 .header{
     height: 100%;
     width: 100%;
     position: relative;
     padding: 0%;
 }
-
 .img{ 
     display: grid;
     height: 250px;
@@ -26,7 +23,6 @@ body{
     background-size: 1900px;/*ajustar imagen*/
     border-radius: 6px;
 }
-
 .titulo{
     position: relative;
     margin: 0;
@@ -215,6 +211,8 @@ div > ol > li> p{
 .dates{
     margin-top: 60vh;
 }
+
+/*------------------------------game information----------------------*/
 .conteiner-tabla{
     margin: 0;
     width: 100%;
@@ -231,7 +229,7 @@ table td{
     margin-top: 40px;
     text-align: center;
     font-size: 20px;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px white; /*bode de las filas*/
 }
 
 .padding-none{
@@ -244,7 +242,7 @@ table td{
     font-size: 23px;
     text-align: center;
     background: linear-gradient( #290000, #000000 );
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px rgb(255, 255, 255);
 }
 
 tr:nth-child(odd){ /*aplicar a los hijos */
@@ -307,6 +305,8 @@ tr:nth-child(odd){ /*aplicar a los hijos */
     position: absolute;
     right: 0%;
 }
+
+/*--------------------------form-----------------------*/
 .titleForm{
     font-size: 34px;
     list-style: none;
@@ -344,6 +344,9 @@ tr:nth-child(odd){ /*aplicar a los hijos */
     width:31%;
     color: white
 }
+.conteinerBirthDate{
+    color: white;
+}
 .ConteinerStreetAddress{
     grid-column: 1/3;
 }
@@ -364,7 +367,7 @@ tr:nth-child(odd){ /*aplicar a los hijos */
     font-size: 22px;
 }
 .form-registration input[type="checkbox"]{
-    display: none;
+    display: none; /*eliminar los recuadros de los checkbox*/
 }
 .conteinerSex label,
 .conteinerGrade label,
@@ -379,26 +382,26 @@ tr:nth-child(odd){ /*aplicar a los hijos */
     border-radius: 3px;
     cursor: pointer;
     margin-bottom: 5px;
-    -webkit-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease; /*transicion de los label*/
     -o-transition:all 0.3s ease;
     transition: all 0.3s ease;
 }
-.conteinerSex label:hover,
+.conteinerSex label:hover, /*color al pasar muse*/
 .conteinerGrade label:hover,
 .closest label:hover,
 .position label:hover,
 .uniform label:hover{
     background: #6d6d6d57;
 }
-.conteinerSex label:before,
+.conteinerSex label:before, /*label despeus de clikear*/
 .conteinerGrade label:before,
 .closest label:before,
 .position label:before,
 .uniform label:before{
     content: "";
-    width: 14px;
+    width: 14px; /*nuevo checkbox*/
     height: 14px;
-    display: inline-block;
+    display: inline-block; /*poner todo dentro del block*/
     background: none;
     border: 3px solid white;
     border-radius:3%;
@@ -410,7 +413,7 @@ tr:nth-child(odd){ /*aplicar a los hijos */
 .conteinerGrade label{
     border: none;
 }
-.form-registration input[type="checkbox"]:checked + label{
+.form-registration input[type="checkbox"]:checked + label{ /*cuando en el input se apreta sobre el checkbox se aplica al label */
     padding: 5px 15px;
     background: #cbcbcb;
     color: #000000;
@@ -456,7 +459,7 @@ form > p{
     background: none;
     border-bottom: 1px solid white;
     outline: none;
-    
+    color: white;
 }
 .send-form{
     width: 20%;
